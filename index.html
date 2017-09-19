@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en" class="app">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Musik | Web Application</title>
+  <meta name="description" content="app, web app, responsive, admin dashboard, admin, flat, flat ui, ui kit, off screen nav"
+  />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <link rel="stylesheet" href="js/jPlayer/jplayer.flat.css" type="text/css" />
+  <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+  <link rel="stylesheet" href="css/animate.css" type="text/css" />
+  <link rel="stylesheet" href="css/eomp.css" type="text/css" />
+  <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
+  <link rel="stylesheet" href="css/simple-line-icons.css" type="text/css" />
+  <link rel="stylesheet" href="css/font.css" type="text/css" />
+  <link rel="stylesheet" href="css/app.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="js/ie/html5shiv.js"></script>
+    <script src="js/ie/respond.min.js"></script>
+    <script src="js/ie/excanvas.js"></script>
+  <![endif]-->
+</head>
+
+<body class="">
+  <section class="vbox">
+    <header class="bg-black lter header header-md navbar navbar-fixed-top-xs">
+    
+      <form class="navbar-form navbar-left input-s-xl m-t m-l-n-xs hidden-xs" role="search">
+
+        <div class="form-group block">
+          <div class="input-group">
+            <a class=" input-group-btn" href="index.html">
+      <span class="h3 font-bold text-success">EGFM</span>
+      <span class="h3 font-bold ">MessageBox</span>
+      </a>
+            <span class="input-group-btn">
+                <button type="submit" class="btn btn-lg bg-empty btn-icon rounded m-t-xs m-l" style="
+                padding: 0px;
+            "><i class="icon-magnifier"></i></button>
+            </span>
+            <input type="text" class="form-control input-sm no-border rounded bg-empty text-md text-white p-l-0" placeholder="Search for messages, ministers, and more">
+          </div>
+        </div>
+      </form>
+      <div class="navbar-right ">
+          <a href="signin.html" class="btn btn-s-md m-t btn-transparent">Sign In</a>
+          <a href="signup.html" class="btn btn-s-md m-t m-l-sm m-r btn-transparent">Create Account</a>
+          
+      </div>
+    </header>
+    <section>
+      <section class="hbox stretch">
+        <!-- .aside -->
+        <aside class="bg-black bg nav-xs aside hidden-print" id="nav">
+          <section class="vbox">
+            <section class="w-f-md scrollable">
+              <div class="slim-scroll" data-height="auto" data-disable-fade-out="true" data-distance="0" data-size="10px" data-railOpacity="0.2">
+
+
+
+                <!-- nav -->
+                <nav class="nav-primary hidden-xs">
+                  <ul class="nav bg clearfix">
+                    <li class="hidden-nav-xs padder m-t m-b-sm text-xs text-muted">
+                      Discover
+                    </li>
+                    <li>
+                      <a href="index.html">
+                        <i class="icon-disc icon text-success"></i>
+                        <span class="font-bold">New Releases</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="genres.html">
+                        <i class="icon-drawer icon text-success"></i>
+                        <span class="font-bold">New Series</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="video.html" data-target="#content" data-el="#bjax-el" data-replace="true">
+                        <i class="icon-social-youtube icon  text-success"></i>
+                        <span class="font-bold">Pricing Plans</span>
+                      </a>
+                    </li>
+                    <li class="m-b hidden-nav-xs"></li>
+                  </ul>
+                  <ul class="nav" data-ride="collapse">
+                    <li class="hidden-nav-xs padder m-t m-b-sm text-xs text-muted">
+                      Subscription Plans
+                    </li>
+
+                  </ul>
+                </nav>
+                <!-- / nav -->
+              </div>
+            </section>
+
+            <footer class="footer hidden-xs no-padder text-center-nav-xs">
+              <div class="bg hidden-xs ">
+
+              </div>
+            </footer>
+          </section>
+        </aside>
+        <!-- /.aside -->
+        <section id="content">
+          <section class="hbox stretch">
+            <section>
+              <section class="vbox bg-black dker">
+                <section class="scrollable padder-lg w-f-md" id="bjax-target">
+                  <a href="#" class="pull-right text-muted m-t-lg" data-toggle="class:fa-spin"><i class="icon-refresh i-lg  inline" id="refresh"></i></a>
+                  <h3 class="font-normal m-b-md m-t-md" style="margin-left: 5px;">New Releases </h3>
+                  <div class="row row-sm">
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                      <div class="item">
+                        <div class="pos-rlt w-90p ">
+                          <div class="item-overlay opacity animated fadeInUp r r-2x bg-black">
+
+                            <div class="center text-center m-t-n">
+                              <a href="#" data-toggle="class">
+                                <i class="icon-control-play i-2x text"></i>
+                                <i class="icon-control-pause i-2x text-active"></i>                                
+                              </a>
+                            </div>
+                            <div class="bottom padder m-b-sm">
+                              <a href="#" class="pull-right">
+                                    <i class="icon-cloud-download"></i>
+                                  </a>
+                              <a href="#">
+                                    <span class="text-ellipsis text-xs">Free</span>
+                                  </a>
+                            </div>
+                          </div>
+                          <div class="top">
+                            <span class="pull-right m-t-n-xs m-r-sm text-success">
+                                    <i class="fa fa-bookmark i-lg"></i>
+                                  </span>
+                          </div>
+                          <a href="#"><img src="images/a2.png" alt="" class="r r-2x img-full"></a>
+                        </div>
+                        <div class="padder-v">
+                          <a href="#" class="text-ellipsis">2017-09-09 Unveiling The Mysteries Of God</a>
+                          <a href="#" class="text-ellipsis text-xs text-muted">Rev Kayode Oyegoke</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                      <div class="item">
+                        <div class="pos-rlt w-90p">
+                          <div class="item-overlay opacity animated fadeInUp r r-2x bg-black">
+
+                            <div class="center text-center m-t-n">
+                              <a href="#"><i class="icon-control-play i-2x"></i></a>
+                            </div>
+                            <div class="bottom padder m-b-sm">
+                              <a href="#" class="pull-right">
+                                             <i class="icon-cloud-download"></i>
+                                           </a>
+                              <a href="#">
+                                             <span class="text-ellipsis text-xs">Paid</span>
+                                           </a>
+                            </div>
+                          </div>
+                          <div class="top">
+                            <span class="pull-right m-t-n-xs m-r-sm text-success">
+                                  <i class="fa fa-bookmark i-lg"></i>
+                                </span>
+                          </div>
+                          <a href="#"><img src="images/a0.png" alt="" class="r r-2x img-full"></a>
+                        </div>
+                        <div class="padder-v">
+                          <a href="#" class="text-ellipsis">2017-09-10 Holy Priesthood</a>
+                          <a href="#" class="text-ellipsis text-xs text-muted">Pastor Jesh</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="clearfix visible-xs"></div>
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                      <div class="item">
+                        <div class="pos-rlt w-90p">
+                          <div class="item-overlay opacity animated fadeInUp r r-2x bg-black">
+
+                            <div class="center text-center m-t-n">
+                              <a href="#"><i class="icon-control-play i-2x"></i></a>
+                            </div>
+                            <div class="bottom padder m-b-sm">
+                              <a href="#" class="pull-right">
+                                             <i class="icon-cloud-download"></i>
+                                           </a>
+                              <a href="#">
+                                             <span class="text-ellipsis text-xs">Free</span>
+                                           </a>
+                            </div>
+                          </div>
+                          <div class="top">
+                            <span class="pull-right m-t-n-xs m-r-sm text-success">
+                                    <i class="fa fa-bookmark i-lg"></i>
+                                  </span>
+                          </div>
+                          <a href="#"><img src="images/a1.png" alt="" class="r r-2x img-full"></a>
+                        </div>
+                        <div class="padder-v">
+                          <a href="#" class="text-ellipsis">2017-09-11 Pathway Unto Righteousness</a>
+                          <a href="#" class="text-ellipsis text-xs text-muted">Rev Helen Oyegoke</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                      <div class="item">
+                        <div class="pos-rlt w-90p">
+                          <div class="item-overlay opacity animated fadeInUp r r-2x bg-black">
+
+                            <div class="center text-center m-t-n">
+                              <a href="#"><i class="icon-control-play i-2x"></i></a>
+                            </div>
+                            <div class="bottom padder m-b-sm">
+                              <a href="#" class="pull-right">
+                                             <i class="icon-cloud-download"></i>
+                                           </a>
+                              <a href="#">
+                                             <span class="text-ellipsis text-xs">Paid</span>
+                                           </a>
+                            </div>
+                          </div>
+                          <a href="#"><img src="images/a3.png" alt="" class="r r-2x img-full"></a>
+                        </div>
+                        <div class="padder-v">
+                          <a href="#" class="text-ellipsis">2017-09-11 Priestly Service 1</a>
+                          <a href="#" class="text-ellipsis text-xs text-muted">Pastor Emeka EgwuChukwu</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="clearfix visible-xs"></div>
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                      <div class="item">
+                        <div class="pos-rlt w-90p">
+                          <div class="item-overlay opacity animated fadeInUp r r-2x bg-black">
+
+                            <div class="center text-center m-t-n">
+                              <a href="#"><i class="icon-control-play i-2x"></i></a>
+                            </div>
+                            <div class="bottom padder m-b-sm">
+                              <a href="#" class="pull-right">
+                                             <i class="icon-cloud-download"></i>
+                                           </a>
+                              <a href="#">
+                                             <span class="text-ellipsis text-xs">Free</span>
+                                           </a>
+                            </div>
+                          </div>
+                          <a href="#"><img src="images/a2.png" alt="" class="r r-2x img-full"></a>
+                        </div>
+                        <div class="padder-v">
+                          <a href="#" class="text-ellipsis">Morbi id neque quam liquam sollicitudin</a>
+                          <a href="#" class="text-ellipsis text-xs text-muted">Allen JH</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                      <div class="item">
+                        <div class="pos-rlt w-90p">
+                          <div class="item-overlay opacity animated fadeInUp r r-2x bg-black">
+
+                            <div class="center text-center m-t-n">
+                              <a href="#"><i class="icon-control-play i-2x"></i></a>
+                            </div>
+                            <div class="bottom padder m-b-sm">
+                              <a href="#" class="pull-right">
+                                             <i class="icon-cloud-download"></i>
+                                           </a>
+                              <a href="#">
+                                             <span class="text-ellipsis text-xs">Paid</span>
+                                           </a>
+                            </div>
+                          </div>
+                          <a href="#"><img src="images/a2.png" alt="" class="r r-2x img-full"></a>
+                        </div>
+                        <div class="padder-v">
+                          <a href="#" class="text-ellipsis">Tincidunt libero</a>
+                          <a href="#" class="text-ellipsis text-xs text-muted">Amanda Conlan</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="clearfix visible-xs"></div>
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                      <div class="item">
+                        <div class="pos-rlt w-90p">
+                          <div class="item-overlay opacity animated fadeInUp r r-2x bg-black">
+
+                            <div class="center text-center m-t-n">
+                              <a href="#"><i class="icon-control-play i-2x"></i></a>
+                            </div>
+                            <div class="bottom padder m-b-sm">
+                              <a href="#" class="pull-right">
+                                             <i class="icon-cloud-download"></i>
+                                           </a>
+                              <a href="#">
+                                             <span class="text-ellipsis text-xs">Free</span>
+                                           </a>
+                            </div>
+                          </div>
+                          <a href="#"><img src="images/a2.png" alt="" class="r r-2x img-full"></a>
+                        </div>
+                        <div class="padder-v">
+                          <a href="#" class="text-ellipsis">Morbi id neque quam liquam sollicitudin</a>
+                          <a href="#" class="text-ellipsis text-xs text-muted">Allen JH</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                      <div class="item">
+                        <div class="pos-rlt w-90p">
+                          <div class="item-overlay opacity animated fadeInUp r r-2x bg-black">
+
+                            <div class="center text-center m-t-n">
+                              <a href="#"><i class="icon-control-play i-2x"></i></a>
+                            </div>
+                            <div class="bottom padder m-b-sm">
+                              <a href="#" class="pull-right">
+                                             <i class="icon-cloud-download"></i>
+                                           </a>
+                              <a href="#">
+                                             <span class="text-ellipsis text-xs">Paid</span>
+                                           </a>
+                            </div>
+                          </div>
+                          <a href="#"><img src="images/a2.png" alt="" class="r r-2x img-full"></a>
+                        </div>
+                        <div class="padder-v">
+                          <a href="#" class="text-ellipsis">Tincidunt libero</a>
+                          <a href="#" class="text-ellipsis text-xs text-muted">Amanda Conlan</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="clearfix visible-xs"></div>
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                      <div class="item">
+                        <div class="pos-rlt w-90p">
+                          <div class="item-overlay opacity animated fadeInUp r r-2x bg-black">
+
+                            <div class="center text-center m-t-n">
+                              <a href="#"><i class="icon-control-play i-2x"></i></a>
+                            </div>
+                            <div class="bottom padder m-b-sm">
+                              <a href="#" class="pull-right">
+                                             <i class="icon-cloud-download"></i>
+                                           </a>
+                              <a href="#">
+                                             <span class="text-ellipsis text-xs">Free</span>
+                                           </a>
+                            </div>
+                          </div>
+                          <a href="#"><img src="images/a2.png" alt="" class="r r-2x img-full"></a>
+                        </div>
+                        <div class="padder-v">
+                          <a href="#" class="text-ellipsis">Morbi id neque quam liquam sollicitudin</a>
+                          <a href="#" class="text-ellipsis text-xs text-muted">Allen JH</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                      <div class="item">
+                        <div class="pos-rlt w-90p">
+                          <div class="item-overlay opacity animated fadeInUp r r-2x bg-black">
+
+                            <div class="center text-center m-t-n">
+                              <a href="#"><i class="icon-control-play i-2x"></i></a>
+                            </div>
+                            <div class="bottom padder m-b-sm">
+                              <a href="#" class="pull-right">
+                                             <i class="icon-cloud-download"></i>
+                                           </a>
+                              <a href="#">
+                                             <span class="text-ellipsis text-xs">Free</span>
+                                           </a>
+                            </div>
+                          </div>
+                          <a href="#"><img src="images/a2.png" alt="" class="r r-2x img-full"></a>
+                        </div>
+                        <div class="padder-v">
+                          <a href="#" class="text-ellipsis">Tincidunt libero</a>
+                          <a href="#" class="text-ellipsis text-xs text-muted">Amanda Conlan</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="clearfix visible-xs"></div>
+
+                  </div>
+                  <div class="row m-t">
+                    <div class="col-md-12">
+                      <h3 class="font-normal m-b-md m-t-lg " style="margin-left: 5px;">New Series </h3>
+                      <div class="row row-sm">
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                          <div class="item">
+                            <div class="pos-rlt w-90p">
+                              <div class="item-overlay opacity animated fadeInUp r r-2x bg-black">
+
+                                <div class="center text-center m-t-n">
+                                    <a href="#"><i class="icon-cloud-download i-2x"></i></a>
+                                    
+                                </div>
+                              </div>
+                              <div class="top">
+                                <span class="pull-right m-t-n-xs m-r-sm text-success">
+                                          <i class="fa fa-bookmark i-lg"></i>
+                                        </span>
+                              </div>
+                              <a href="#"><img src="images/s0.jpeg" alt="" class="r r-2x img-full"></a>
+                            </div>
+                            <div class="padder-v">
+                              <a href="#" class="text-ellipsis">September WTV</a>
+                              <a href="#" class="text-ellipsis text-xs text-muted">5 Messages</a>                              
+                              
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                          <div class="item">
+                            <div class="pos-rlt w-90p">
+                              <div class="item-overlay opacity animated fadeInUp r r-2x bg-black">
+
+                                <div class="center text-center m-t-n">
+                                    <a href="#"><i class="icon-cloud-download i-2x"></i></a>
+                                  </div>
+                              </div>
+                              <div class="top">
+                                <span class="pull-right m-t-n-xs m-r-sm text-success">
+                                        <i class="fa fa-bookmark i-lg"></i>
+                                      </span>
+                              </div>
+                              <a href="#"><img src="images/s0.jpeg" alt="" class="r r-2x img-full"></a>
+                            </div>
+                            <div class="padder-v">
+                              <a href="#" class="text-ellipsis">BCON 2017</a>
+                              <a href="#" class="text-ellipsis text-xs text-muted">25 Messages</a>                              
+                            </div>
+                          </div>
+                        </div>
+                        <div class="clearfix visible-xs"></div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                          <div class="item">
+                            <div class="pos-rlt w-90p">
+                              <div class="item-overlay opacity animated fadeInUp r r-2x bg-black">
+
+                                <div class="center text-center m-t-n">
+                                    <a href="#"><i class="icon-cloud-download i-2x"></i></a>
+                                  </div>
+                              </div>
+                              <div class="top">
+                                <span class="pull-right m-t-n-xs m-r-sm text-success">
+                                          <i class="fa fa-bookmark i-lg"></i>
+                                        </span>
+                              </div>
+                              <a href="#"><img src="images/s1.jpeg" alt="" class="r r-2x img-full"></a>
+                            </div>
+                            <div class="padder-v">
+                              <a href="#" class="text-ellipsis">Canada Becon 2017</a>
+                              <a href="#" class="text-ellipsis text-xs text-muted">25 Messages</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                          <div class="item">
+                            <div class="pos-rlt w-90p">
+                              <div class="item-overlay opacity animated fadeInUp r r-2x bg-black">
+
+                                <div class="center text-center m-t-n">
+                                  <a href="#"><i class="icon-cloud-download i-2x"></i></a>
+                                </div>
+                              </div>
+                              <a href="#"><img src="images/s1.jpeg" alt="" class="r r-2x img-full"></a>
+                            </div>
+                            <div class="padder-v">
+                                <a href="#" class="text-ellipsis">Power Of Prayer Series</a>
+                                <a href="#" class="text-ellipsis text-xs text-muted">5 Messages</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="clearfix visible-xs"></div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                          <div class="item">
+                            <div class="pos-rlt w-90p">
+                              <div class="item-overlay opacity animated fadeInUp r r-2x bg-black">
+
+                                <div class="center text-center m-t-n">
+                                    <a href="#"><i class="icon-cloud-download i-2x"></i></a>
+                                  </div>
+                              </div>
+                              <a href="#"><img src="images/s0.jpeg" alt="" class="r r-2x img-full"></a>
+                            </div>
+                            <div class="padder-v">
+                                <a href="#" class="text-ellipsis">Heavenly Service Series</a>
+                                <a href="#" class="text-ellipsis text-xs text-muted">5 Messages</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                          <div class="item">
+                            <div class="pos-rlt w-90p">
+                              <div class="item-overlay opacity animated fadeInUp r r-2x bg-black">
+
+                                <div class="center text-center m-t-n">
+                                    <a href="#"><i class="icon-cloud-download i-2x"></i></a>
+                                  </div>
+                              </div>
+                              <a href="#"><img src="images/s0.jpeg" alt="" class="r r-2x img-full"></a>
+                            </div>
+                            <div class="padder-v">
+                                <a href="#" class="text-ellipsis">Anamnesis 2016</a>
+                                <a href="#" class="text-ellipsis text-xs text-muted">16 Messages</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="clearfix visible-xs"></div>
+
+                      </div>
+                    </div>
+                  </div>
+                 
+                </section>
+                <footer class="footer bg-dark lter">
+                  <div id="jp_container_N">
+                    <div class="jp-type-playlist">
+                      <div id="jplayer_N" class="jp-jplayer hide"></div>
+                      <div class="jp-gui">
+                        <div class="jp-video-play hide">
+                          <a class="jp-video-play-icon">play</a>
+                        </div>
+                        <div class="jp-interface">
+                          <div class="jp-controls">
+                            <div><a class="jp-previous"><i class="icon-control-rewind i-lg"></i></a></div>
+                            <div>
+                              <a class="jp-play"><i class="icon-control-play i-2x"></i></a>
+                              <a class="jp-pause hid"><i class="icon-control-pause i-2x"></i></a>
+                            </div>
+                            <div><a class="jp-next"><i class="icon-control-forward i-lg"></i></a></div>
+                            <div class="hide"><a class="jp-stop"><i class="fa fa-stop"></i></a></div>
+                            <div><a class="" data-toggle="dropdown" data-target="#playlist"><i class="icon-list"></i></a></div>
+                            <div class="jp-progress hidden-xs">
+                              <div class="jp-seek-bar lter">
+                                <div class="jp-play-bar bg-success">
+                                </div>
+                                <div class="jp-title text-lt">
+                                  <ul>
+                                    <li></li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="hidden-xs hidden-sm jp-current-time text-xs text-muted"></div>
+                            <div class="hidden-xs hidden-sm jp-duration text-xs text-muted"></div>
+                            <div class="hidden-xs hidden-sm">
+                              <a class="jp-mute" title="mute"><i class="icon-volume-2"></i></a>
+                              <a class="jp-unmute hid" title="unmute"><i class="icon-volume-off"></i></a>
+                            </div>
+                            <div class="hidden-xs hidden-sm jp-volume bg-success bg-empty">
+                              <div class="jp-volume-bar dk">
+                                <div class="jp-volume-bar-value lter"></div>
+                              </div>
+                            </div>
+                            <div>
+                              <a class="jp-shuffle" title="shuffle"><i class="icon-shuffle text-muted"></i></a>
+                              <a class="jp-shuffle-off hid" title="shuffle off"><i class="icon-shuffle text-lt"></i></a>
+                            </div>
+                            <div>
+                              <a class="jp-repeat" title="repeat"><i class="icon-loop text-muted"></i></a>
+                              <a class="jp-repeat-off hid" title="repeat off"><i class="icon-loop text-lt"></i></a>
+                            </div>
+                            <div class="hide">
+                              <a class="jp-full-screen" title="full screen"><i class="fa fa-expand"></i></a>
+                              <a class="jp-restore-screen" title="restore screen"><i class="fa fa-compress text-lt"></i></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="jp-playlist dropup" id="playlist">
+                        <ul class="dropdown-menu aside-xl dker">
+                          <!-- The method Playlist.displayPlaylist() uses this unordered list -->
+                          <li class="list-group-item"></li>
+                        </ul>
+                      </div>
+                      <div class="jp-no-solution hide">
+                        <span>Update Required</span> To play the media you will need to either update your browser to a recent
+                        version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+                      </div>
+                    </div>
+                  </div>
+                </footer>
+              </section>
+            </section>
+            <!-- side content -->
+            <aside class="aside-md bg-black dk" id="sidebar">
+              <section class="vbox animated fadeInRight">
+                <section class="w-f-md scrollable hover">
+                  <h4 class="font-thin m-l-md m-t text-center">Pricing Plans</h4>
+                  <div class="col-md-12">
+                    
+                    <div class="row row-sm">
+                      <div class="col-sm-12">
+                        <div class="bg-primary wrapper-md  text-center ">
+                          <a href="#">
+                            <span class="h4 m-b-xs block">Free</span>
+                            <span class="h2  block">₦0</span>
+                            <span class="block m-b-xs">Always</span>    
+                            <div class="text-sm block m-b-xs">•</div>         
+                            <span class="text-muted">Unlimited downloads of only free messages</span>
+                            </a><a href="#" class="btn btn-s-md m-t-sm btn-transparent">Sign Up</a>
+                          
+                        </div>
+                      </div>
+                      <div class="col-sm-12">
+                        <div class="bg-info dk wrapper-md  text-center">
+                          <a href="#">
+                          <span class="h4 m-b-xs block">Economy</span>
+                          <span class="h2  block">₦500</span>
+                          <span class="block m-b-xs">1 day</span>    
+                          <div class="text-sm block m-b-xs">•</div>                        
+                          <span class="text-muted">Unlimited downloads daily of all messages</span>
+                          </a><a href="#" class="btn btn-s-md m-t-sm btn-transparent">Join</a>
+                          
+                        
+                        </div>
+                      </div>
+                      <div class="col-sm-12 ">
+                        <div class="bg-success dk wrapper-md  text-center">
+                          <a href="#">
+                          <span class="h4 m-b-xs block">Super Savers</span>
+                          <span class="h2  block">₦2,000</span>
+                          <span class="block m-b-xs">7 days</span>    
+                          <div class="text-sm block m-b-xs">•</div>     
+                          <span class="text-muted">Unlimited downloads weekly of all messages</span>
+                          </a><a href="#" class="btn btn-s-md m-t-sm btn-transparent">Join</a>
+                          
+                        
+                        </div>
+                      </div>
+                      <div class="col-sm-12">
+                        <div class="bg-primary lter wrapper-md  text-center">
+                          <a href="#">
+                            <span class="h4 m-b-xs block">Classic</span>
+                            <span class="h2  block">₦10,000</span>
+                            <span class="block m-b-xs">30 days</span>    
+                            <div class="text-sm block m-b-xs">•</div>    
+                            <span class="text-muted">Unlimited downloads monthly of all messages</span>
+                            </a><a href="#" class="btn btn-s-md m-t-sm btn-transparent">Join</a>
+                            
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <footer class="footer footer-md bg-black lter">
+                  <span class="musicbar bg-success bg-empty inline m-l-sm m-t" style="width:20px;height:20px">
+                        <span class="bar1 a1  lter"></span>
+                  <span class="bar2 a2  lt"></span>
+                  <span class="bar3 a3 bg"></span>
+                  <span class="bar4 a4 dk"></span>
+                  <span class="bar5 a5 dker"></span>
+                  </span>
+                </footer>
+              </section>
+            </aside>
+            <!-- / side content -->
+          </section>
+          <a href="#" class="hide nav-off-screen-block" data-toggle="class:nav-off-screen,open" data-target="#nav,html"></a>
+        </section>
+      </section>
+    </section>
+  </section>
+  <script src="js/jquery.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="js/bootstrap.js"></script>
+  <!-- App -->
+  <script src="js/app.js"></script>
+  <script src="js/slimscroll/jquery.slimscroll.min.js"></script>
+  <script src="js/app.plugin.js"></script>
+  <script type="text/javascript" src="js/jPlayer/jquery.jplayer.min.js"></script>
+  <script type="text/javascript" src="js/jPlayer/add-on/jplayer.playlist.min.js"></script>
+  <script type="text/javascript" src="js/jPlayer/demo.js"></script>
+</body>
+
+</html>
