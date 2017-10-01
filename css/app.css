@@ -834,7 +834,7 @@ body.container {
   z-index: 2;
 }
 .nav-primary ul.nav > li > a {
-  padding: 9px 20px;
+  padding: 11px 20px;
   position: relative;
   -webkit-transition: background-color .2s ease-in-out 0s;
   transition: background-color .2s ease-in-out 0s;
@@ -2755,7 +2755,7 @@ a.bg-light:focus {
   color: #339cb1;
 }
 .text-success {
-  color: #1ab667;
+  color: #1ab667 !important;
 }
 .text-success-lt {
   color: #1dcc74;

@@ -25,7 +25,7 @@
 <body class="">
   <section class="vbox">
     <header class="bg-black lter header header-md navbar navbar-fixed-top-xs">
-
+    
       <form class="navbar-form navbar-left input-s-xl m-t m-l-n-xs hidden-xs" role="search">
 
         <div class="form-group block">
@@ -44,25 +44,144 @@
         </div>
       </form>
       <div class="navbar-right ">
-        <a href="signin.html" class="btn btn-s-md m-t btn-transparent">Sign In</a>
-        <a href="signup.html" class="btn btn-s-md m-t m-l-sm m-r btn-transparent">Create Account</a>
-
-      </div>
+        <ul class="nav navbar-nav m-n hidden-xs nav-user user">
+          <li class="hidden-xs">
+            <a href="#" class="dropdown-toggle " data-toggle="dropdown">
+              <i class="icon-bell"></i>
+              <span class="badge badge-sm up bg-success count">2</span>
+            </a>
+            <section class="dropdown-menu aside-xl animated fadeInUp">
+              <section class="panel bg-white">
+                <div class="panel-heading b-light bg-light">
+                  <strong>You have <span class="count">2</span> notifications</strong>
+                </div>
+                <div class="list-group list-group-alt">
+                  <a href="#" class="media list-group-item">
+                    <span class="pull-left thumb-sm">
+                      <img src="images/a0.png" alt="..." class="img-circle">
+                    </span>
+                    <span class="media-body block m-b-none">
+                      Use awesome animate.css<br>
+                      <small class="text-muted">10 minutes ago</small>
+                    </span>
+                  </a>
+                  <a href="#" class="media list-group-item">
+                    <span class="media-body block m-b-none">
+                      1.0 initial released<br>
+                      <small class="text-muted">1 hour ago</small>
+                    </span>
+                  </a>
+                </div>
+                <div class="panel-footer text-sm">
+                  <a href="#" class="pull-right"><i class="fa fa-cog"></i></a>
+                  <a href="#notes" data-toggle="class:show animated fadeInRight">See all the notifications</a>
+                </div>
+              </section>
+            </section>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle  clear" data-toggle="dropdown">
+              <span class="thumb-sm avatar pull-right m-t-n-sm m-b-n-sm m-l-sm">
+                <img src="images/a0.png" alt="...">
+              </span>
+              John.Smith <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu animated fadeInRight">            
+              <li>
+                <span class="arrow top"></span>
+                <a href="#">Settings</a>
+              </li>
+              <li>
+                <a href="profile.html">Profile</a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="badge bg-danger pull-right">3</span>
+                  Notifications
+                </a>
+              </li>
+              <li>
+                <a href="docs.html">Help</a>
+              </li>
+              <li class="divider"></li>
+              <li>
+                <a href="modal.lockme.html" data-toggle="ajaxModal" >Logout</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>  
     </header>
     <section>
       <section class="hbox stretch">
+        <!-- .aside -->
+        <aside class="bg-black bg  aside hidden-print" id="nav">
+          <section class="vbox">
+            <section class="w-f-md scrollable">
+              <div class="slim-scroll" data-height="auto" data-disable-fade-out="true" data-distance="0" data-size="10px" data-railOpacity="0.2">
 
+
+
+                <!-- nav -->
+                <nav class="nav-primary hidden-xs">
+                  <ul class="nav bg clearfix">
+                    <a href="subscription.html" class="btn btn-s-md btn-success m-t-lg m-l-lg btn-transparent text-success text-xs">F R E E</a> 
+                    <li class="m-t-md active">
+                      <a href="index.html">
+                        <i class="icon-disc icon text-success"></i>
+                        <span >Discover</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="browse.html">
+                        <i class="icon-drawer icon text-success"></i>
+                        <span class="font-normal">Browse</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="subscription.html" data-target="#content" data-el="#bjax-el" data-replace="true">
+                        <i class="icon-wallet icon  text-success"></i>
+                        <span ></span>Subscription</span>
+                      </a>
+                    </li>
+                    <li class="m-t-lg">
+                      <a href="video.html" data-target="#content" data-el="#bjax-el" data-replace="true">
+                        <i class="icon-settings icon  text-success"></i>
+                        <span ></span>Settings</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="video.html" data-target="#content" data-el="#bjax-el" data-replace="true">
+                        <i class="icon-info icon  text-success"></i>
+                        <span ></span>Help</span>
+                      </a>
+                    </li>
+                    <li class="m-b hidden-nav-xs"></li>
+                  </ul>
+                </nav>
+                <!-- / nav -->
+              </div>
+            </section>
+
+            <footer class="footer hidden-xs no-padder text-center-nav-xs">
+              <div class="bg hidden-xs ">
+
+              </div>
+            </footer>
+          </section>
+        </aside>
+        <!-- /.aside -->
         <section id="content">
           <section class="hbox stretch">
             <section>
               <section class="vbox bg-black dker">
-                <section class="scrollable padder-lg  w-f-md" id="bjax-target">
-
+                <section class="scrollable padder-lg w-f-md" id="bjax-target">
+                  <a href="#" class="pull-right text-muted m-t-lg" data-toggle="class:fa-spin"> <i class="icon-grid icon text-muted"></i><span class="text-muted m-l-xs m-b-lg" >Show More</span></i></a>
                   <h3 class="font-normal m-b-md m-t-md" style="margin-left: 5px;">New Releases </h3>
                   <div class="row row-sm">
                     <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
                       <div class="item">
-                        <div class="pos-rlt ">
+                        <div class="pos-rlt w-95p ">
                           <div class="item-overlay opacity animated fadeInUp r r-2x bg-black">
 
                             <div class="center text-center m-t-n">
@@ -95,7 +214,7 @@
                     </div>
                     <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
                       <div class="item">
-                        <div class="pos-rlt ">
+                        <div class="pos-rlt w-95p">
                           <div class="item-overlay opacity animated fadeInUp r r-2x bg-black">
 
                             <div class="center text-center m-t-n">
@@ -126,7 +245,7 @@
                     <div class="clearfix visible-xs"></div>
                     <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
                       <div class="item">
-                        <div class="pos-rlt ">
+                        <div class="pos-rlt w-95p">
                           <div class="item-overlay opacity animated fadeInUp r r-2x bg-black">
 
                             <div class="center text-center m-t-n">
@@ -156,7 +275,7 @@
                     </div>
                     <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
                       <div class="item">
-                        <div class="pos-rlt ">
+                        <div class="pos-rlt w-95p">
                           <div class="item-overlay opacity animated fadeInUp r r-2x bg-black">
 
                             <div class="center text-center m-t-n">
@@ -182,7 +301,7 @@
                     <div class="clearfix visible-xs"></div>
                     <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
                       <div class="item">
-                        <div class="pos-rlt ">
+                        <div class="pos-rlt w-95p">
                           <div class="item-overlay opacity animated fadeInUp r r-2x bg-black">
 
                             <div class="center text-center m-t-n">
@@ -207,7 +326,7 @@
                     </div>
                     <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
                       <div class="item">
-                        <div class="pos-rlt ">
+                        <div class="pos-rlt w-95p">
                           <div class="item-overlay opacity animated fadeInUp r r-2x bg-black">
 
                             <div class="center text-center m-t-n">
@@ -233,7 +352,7 @@
                     <div class="clearfix visible-xs"></div>
                     <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
                       <div class="item">
-                        <div class="pos-rlt ">
+                        <div class="pos-rlt w-95p">
                           <div class="item-overlay opacity animated fadeInUp r r-2x bg-black">
 
                             <div class="center text-center m-t-n">
@@ -258,7 +377,7 @@
                     </div>
                     <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
                       <div class="item">
-                        <div class="pos-rlt ">
+                        <div class="pos-rlt w-95p">
                           <div class="item-overlay opacity animated fadeInUp r r-2x bg-black">
 
                             <div class="center text-center m-t-n">
@@ -284,7 +403,7 @@
                     <div class="clearfix visible-xs"></div>
                     <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
                       <div class="item">
-                        <div class="pos-rlt ">
+                        <div class="pos-rlt w-95p">
                           <div class="item-overlay opacity animated fadeInUp r r-2x bg-black">
 
                             <div class="center text-center m-t-n">
@@ -309,7 +428,7 @@
                     </div>
                     <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
                       <div class="item">
-                        <div class="pos-rlt ">
+                        <div class="pos-rlt w-95p">
                           <div class="item-overlay opacity animated fadeInUp r r-2x bg-black">
 
                             <div class="center text-center m-t-n">
@@ -337,16 +456,17 @@
                   </div>
                   <div class="row m-t">
                     <div class="col-md-12">
+                        <a href="#" class="pull-right text-muted m-t-lg" data-toggle="class:fa-spin"> <i class="icon-grid icon text-muted"></i><span class="text-muted m-l-xs m-b-lg" >Show More</span></i></a>                        
                       <h3 class="font-normal m-b-md m-t-lg " style="margin-left: 5px;">New Series </h3>
                       <div class="row row-sm">
                         <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
                           <div class="item">
-                            <div class="pos-rlt ">
+                            <div class="pos-rlt w-95p">
                               <div class="item-overlay opacity animated fadeInUp r r-2x bg-black">
 
                                 <div class="center text-center m-t-n">
-                                  <a href="#"><i class="icon-cloud-download i-2x"></i></a>
-
+                                    <a href="#"><i class="icon-cloud-download i-2x"></i></a>
+                                    
                                 </div>
                               </div>
                               <div class="top">
@@ -358,19 +478,19 @@
                             </div>
                             <div class="padder-v">
                               <a href="#" class="text-ellipsis">September WTV</a>
-                              <a href="#" class="text-ellipsis text-xs text-muted">5 Messages</a>
-
+                              <a href="#" class="text-ellipsis text-xs text-muted">5 Messages</a>                              
+                              
                             </div>
                           </div>
                         </div>
                         <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
                           <div class="item">
-                            <div class="pos-rlt ">
+                            <div class="pos-rlt w-95p">
                               <div class="item-overlay opacity animated fadeInUp r r-2x bg-black">
 
                                 <div class="center text-center m-t-n">
-                                  <a href="#"><i class="icon-cloud-download i-2x"></i></a>
-                                </div>
+                                    <a href="#"><i class="icon-cloud-download i-2x"></i></a>
+                                  </div>
                               </div>
                               <div class="top">
                                 <span class="pull-right m-t-n-xs m-r-sm text-success">
@@ -381,19 +501,19 @@
                             </div>
                             <div class="padder-v">
                               <a href="#" class="text-ellipsis">BCON 2017</a>
-                              <a href="#" class="text-ellipsis text-xs text-muted">25 Messages</a>
+                              <a href="#" class="text-ellipsis text-xs text-muted">25 Messages</a>                              
                             </div>
                           </div>
                         </div>
                         <div class="clearfix visible-xs"></div>
                         <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
                           <div class="item">
-                            <div class="pos-rlt ">
+                            <div class="pos-rlt w-95p">
                               <div class="item-overlay opacity animated fadeInUp r r-2x bg-black">
 
                                 <div class="center text-center m-t-n">
-                                  <a href="#"><i class="icon-cloud-download i-2x"></i></a>
-                                </div>
+                                    <a href="#"><i class="icon-cloud-download i-2x"></i></a>
+                                  </div>
                               </div>
                               <div class="top">
                                 <span class="pull-right m-t-n-xs m-r-sm text-success">
@@ -410,7 +530,7 @@
                         </div>
                         <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
                           <div class="item">
-                            <div class="pos-rlt ">
+                            <div class="pos-rlt w-95p">
                               <div class="item-overlay opacity animated fadeInUp r r-2x bg-black">
 
                                 <div class="center text-center m-t-n">
@@ -420,43 +540,43 @@
                               <a href="#"><img src="images/s1.jpeg" alt="" class="r r-2x img-full"></a>
                             </div>
                             <div class="padder-v">
-                              <a href="#" class="text-ellipsis">Power Of Prayer Series</a>
-                              <a href="#" class="text-ellipsis text-xs text-muted">5 Messages</a>
+                                <a href="#" class="text-ellipsis">Power Of Prayer Series</a>
+                                <a href="#" class="text-ellipsis text-xs text-muted">5 Messages</a>
                             </div>
                           </div>
                         </div>
                         <div class="clearfix visible-xs"></div>
                         <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
                           <div class="item">
-                            <div class="pos-rlt ">
+                            <div class="pos-rlt w-95p">
                               <div class="item-overlay opacity animated fadeInUp r r-2x bg-black">
 
                                 <div class="center text-center m-t-n">
-                                  <a href="#"><i class="icon-cloud-download i-2x"></i></a>
-                                </div>
+                                    <a href="#"><i class="icon-cloud-download i-2x"></i></a>
+                                  </div>
                               </div>
                               <a href="#"><img src="images/s0.jpeg" alt="" class="r r-2x img-full"></a>
                             </div>
                             <div class="padder-v">
-                              <a href="#" class="text-ellipsis">Heavenly Service Series</a>
-                              <a href="#" class="text-ellipsis text-xs text-muted">5 Messages</a>
+                                <a href="#" class="text-ellipsis">Heavenly Service Series</a>
+                                <a href="#" class="text-ellipsis text-xs text-muted">5 Messages</a>
                             </div>
                           </div>
                         </div>
                         <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
                           <div class="item">
-                            <div class="pos-rlt ">
+                            <div class="pos-rlt w-95p">
                               <div class="item-overlay opacity animated fadeInUp r r-2x bg-black">
 
                                 <div class="center text-center m-t-n">
-                                  <a href="#"><i class="icon-cloud-download i-2x"></i></a>
-                                </div>
+                                    <a href="#"><i class="icon-cloud-download i-2x"></i></a>
+                                  </div>
                               </div>
                               <a href="#"><img src="images/s0.jpeg" alt="" class="r r-2x img-full"></a>
                             </div>
                             <div class="padder-v">
-                              <a href="#" class="text-ellipsis">Anamnesis 2016</a>
-                              <a href="#" class="text-ellipsis text-xs text-muted">16 Messages</a>
+                                <a href="#" class="text-ellipsis">Anamnesis 2016</a>
+                                <a href="#" class="text-ellipsis text-xs text-muted">16 Messages</a>
                             </div>
                           </div>
                         </div>
@@ -466,130 +586,10 @@
                     </div>
                   </div>
                   <div class="row m-t m-b-lg">
-                    <div class="col-md-12">
-                      <div class="row row-sm">
-                        <div class="col-sm-6 no-padder">
-                          <h3 class="font-normal m-b-md m-t-lg " style="margin-left: 5px;">Top Downloads </h3>
-                          <ul class="list-group list-group-lg no-bg auto m-b-none m-t-n-xxs">
-                            <li class="list-group-item clearfix">
-
-                              <a href="#" class="pull-right m-t-sm m-l text-md">
-                                  <i class="icon-cloud-download"></i>
-                                </a>
-                              <a href="#" class="jp-play-me pull-right m-t-sm m-l text-md">
-                                    <i class="icon-control-play text"></i>
-                                    <i class="icon-control-pause text-active"></i>
-                                  </a>
-                              <a class="pull-right m-t-sm m-r-sm m-l-lg">
-                                      <small class="text-muted">52:71</small>
-                                    </a>
-                              <a class="pull-left m-t-sm m-r-sm">
-                                        <small class="text-muted">01</small>
-                                      </a>
-                              <a href="#" class="pull-left thumb-sm m-r">
-                                <img src="images/a2.png" alt="...">
-                              </a>
-                              <a class="clear" href="#">
-                                <span class="block text-ellipsis">2017-09-09 Unveiling The Mysteries Of God</span>
-                                <small class="text-muted">Rev Kayode Oyegoke</small>
-                              </a>
-                            </li>
-                            <li class="list-group-item clearfix">
-
-                              <a href="#" class="pull-right m-t-sm m-l text-md">
-                                                                  <i class="icon-cloud-download"></i>
-                                                                </a>
-                              <a href="#" class="jp-play-me pull-right m-t-sm m-l text-md">
-                                                                    <i class="icon-control-play text"></i>
-                                                                    <i class="icon-control-pause text-active"></i>
-                                                                  </a>
-                              <a class="pull-right m-t-sm m-r-sm m-l-lg">
-                                                                      <small class="text-muted">72:41</small>
-                                                                    </a>
-                              <a class="pull-left m-t-sm m-r-sm">
-                                                                        <small class="text-muted">02</small>
-                                                                      </a>
-                              <a href="#" class="pull-left thumb-sm m-r">
-                                                                <img src="images/a0.png" alt="...">
-                                                              </a>
-                              <a class="clear" href="#">
-                                                                <span class="block text-ellipsis">2016-06-09 Sounding The Mysteries Of God</span>
-                                                                <small class="text-muted">Pastor Jesh</small>
-                                                              </a>
-                            </li>
-                            <li class="list-group-item clearfix">
-
-                              <a href="#" class="pull-right m-t-sm m-l text-md">
-                                                                                                  <i class="icon-cloud-download"></i>
-                                                                                                </a>
-                              <a href="#" class="jp-play-me pull-right m-t-sm m-l text-md">
-                                                                                                    <i class="icon-control-play text"></i>
-                                                                                                    <i class="icon-control-pause text-active"></i>
-                                                                                                  </a>
-                              <a class="pull-right m-t-sm m-r-sm m-l-lg">
-                                                                                                      <small class="text-muted">92:71</small>
-                                                                                                    </a>
-                              <a class="pull-left m-t-sm m-r-sm">
-                                                                                                        <small class="text-muted">03</small>
-                                                                                                      </a>
-                              <a href="#" class="pull-left thumb-sm m-r">
-                                                                                                <img src="images/a2.png" alt="...">
-                                                                                              </a>
-                              <a class="clear" href="#">
-                                                                                                <span class="block text-ellipsis">2017-01-05 Sons of Thunder</span>
-                                                                                                <small class="text-muted">Rev Kayode Oyegoke</small>
-                                                                                              </a>
-                            </li>
-                            <li class="list-group-item clearfix">
-
-                              <a href="#" class="pull-right m-t-sm m-l text-md">
-                                                                                                                                  <i class="icon-cloud-download"></i>
-                                                                                                                                </a>
-                              <a href="#" class="jp-play-me pull-right m-t-sm m-l text-md">
-                                                                                                                                    <i class="icon-control-play text"></i>
-                                                                                                                                    <i class="icon-control-pause text-active"></i>
-                                                                                                                                  </a>
-                              <a class="pull-right m-t-sm m-r-sm m-l-lg">
-                                                                                                                                      <small class="text-muted">68:71</small>
-                                                                                                                                    </a>
-                              <a class="pull-left m-t-sm m-r-sm">
-                                                                                                                                        <small class="text-muted">04</small>
-                                                                                                                                      </a>
-                              <a href="#" class="pull-left thumb-sm m-r">
-                                                                                                                                <img src="images/a1.png" alt="...">
-                                                                                                                              </a>
-                              <a class="clear" href="#">
-                                                                                                                                <span class="block text-ellipsis">2017-09-09 The process of faith</span>
-                                                                                                                                <small class="text-muted">Rev Helen Oyegoke</small>
-                                                                                                                              </a>
-                            </li>
-                            <li class="list-group-item clearfix">
-
-                              <a href="#" class="pull-right m-t-sm m-l text-md">
-                                                                                                                                                                  <i class="icon-cloud-download"></i>
-                                                                                                                                                                </a>
-                              <a href="#" class="jp-play-me pull-right m-t-sm m-l text-md">
-                                                                                                                                                                    <i class="icon-control-play text"></i>
-                                                                                                                                                                    <i class="icon-control-pause text-active"></i>
-                                                                                                                                                                  </a>
-                              <a class="pull-right m-t-sm m-r-sm m-l-lg">
-                                                                                                                                                                      <small class="text-muted">52:71</small>
-                                                                                                                                                                    </a>
-                              <a class="pull-left m-t-sm m-r-sm">
-                                                                                                                                                                        <small class="text-muted">05</small>
-                                                                                                                                                                      </a>
-                              <a href="#" class="pull-left thumb-sm m-r">
-                                                                                                                                                                <img src="images/a2.png" alt="...">
-                                                                                                                                                              </a>
-                              <a class="clear" href="#">
-                                                                                                                                                                <span class="block text-ellipsis">2017-09-09 Unveiling The Mysteries Of God</span>
-                                                                                                                                                                <small class="text-muted">Rev Kayode Oyegoke</small>
-                                                                                                                                                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="col-sm-6 no-padder">
-                            <h3 class="font-normal m-b-md m-t-lg " style="margin-left: 5px;">Most Recommended </h3>
+                      <div class="col-md-12">
+                        <div class="row row-sm">
+                          <div class="col-sm-6 no-padder">
+                            <h3 class="font-normal m-b-md m-t-lg " style="margin-left: 5px;">Top Downloads </h3>
                             <ul class="list-group list-group-lg no-bg auto m-b-none m-t-n-xxs">
                               <li class="list-group-item clearfix">
   
@@ -707,10 +707,132 @@
                                                                                                                                                                 </a>
                               </li>
                             </ul>
+                            <!-- <a href="#" class="text-center text-muted m-t-lg"> <span class="text-muted m-l-xs m-b-lg" >Show More</span><i class="icon-arrow-down icon text-muted"></i></a>                                                     -->
                           </div>
+                          <div class="col-sm-6 no-padder">
+                              <h3 class="font-normal m-b-md m-t-lg " style="margin-left: 5px;">Most Recommended </h3>
+                              <ul class="list-group list-group-lg no-bg auto m-b-none m-t-n-xxs">
+                                <li class="list-group-item clearfix">
+    
+                                  <a href="#" class="pull-right m-t-sm m-l text-md">
+                                      <i class="icon-cloud-download"></i>
+                                    </a>
+                                  <a href="#" class="jp-play-me pull-right m-t-sm m-l text-md">
+                                        <i class="icon-control-play text"></i>
+                                        <i class="icon-control-pause text-active"></i>
+                                      </a>
+                                  <a class="pull-right m-t-sm m-r-sm m-l-lg">
+                                          <small class="text-muted">52:71</small>
+                                        </a>
+                                  <a class="pull-left m-t-sm m-r-sm">
+                                            <small class="text-muted">01</small>
+                                          </a>
+                                  <a href="#" class="pull-left thumb-sm m-r">
+                                    <img src="images/a2.png" alt="...">
+                                  </a>
+                                  <a class="clear" href="#">
+                                    <span class="block text-ellipsis">2017-09-09 Unveiling The Mysteries Of God</span>
+                                    <small class="text-muted">Rev Kayode Oyegoke</small>
+                                  </a>
+                                </li>
+                                <li class="list-group-item clearfix">
+    
+                                  <a href="#" class="pull-right m-t-sm m-l text-md">
+                                                                      <i class="icon-cloud-download"></i>
+                                                                    </a>
+                                  <a href="#" class="jp-play-me pull-right m-t-sm m-l text-md">
+                                                                        <i class="icon-control-play text"></i>
+                                                                        <i class="icon-control-pause text-active"></i>
+                                                                      </a>
+                                  <a class="pull-right m-t-sm m-r-sm m-l-lg">
+                                                                          <small class="text-muted">72:41</small>
+                                                                        </a>
+                                  <a class="pull-left m-t-sm m-r-sm">
+                                                                            <small class="text-muted">02</small>
+                                                                          </a>
+                                  <a href="#" class="pull-left thumb-sm m-r">
+                                                                    <img src="images/a0.png" alt="...">
+                                                                  </a>
+                                  <a class="clear" href="#">
+                                                                    <span class="block text-ellipsis">2016-06-09 Sounding The Mysteries Of God</span>
+                                                                    <small class="text-muted">Pastor Jesh</small>
+                                                                  </a>
+                                </li>
+                                <li class="list-group-item clearfix">
+    
+                                  <a href="#" class="pull-right m-t-sm m-l text-md">
+                                                                                                      <i class="icon-cloud-download"></i>
+                                                                                                    </a>
+                                  <a href="#" class="jp-play-me pull-right m-t-sm m-l text-md">
+                                                                                                        <i class="icon-control-play text"></i>
+                                                                                                        <i class="icon-control-pause text-active"></i>
+                                                                                                      </a>
+                                  <a class="pull-right m-t-sm m-r-sm m-l-lg">
+                                                                                                          <small class="text-muted">92:71</small>
+                                                                                                        </a>
+                                  <a class="pull-left m-t-sm m-r-sm">
+                                                                                                            <small class="text-muted">03</small>
+                                                                                                          </a>
+                                  <a href="#" class="pull-left thumb-sm m-r">
+                                                                                                    <img src="images/a2.png" alt="...">
+                                                                                                  </a>
+                                  <a class="clear" href="#">
+                                                                                                    <span class="block text-ellipsis">2017-01-05 Sons of Thunder</span>
+                                                                                                    <small class="text-muted">Rev Kayode Oyegoke</small>
+                                                                                                  </a>
+                                </li>
+                                <li class="list-group-item clearfix">
+    
+                                  <a href="#" class="pull-right m-t-sm m-l text-md">
+                                                                                                                                      <i class="icon-cloud-download"></i>
+                                                                                                                                    </a>
+                                  <a href="#" class="jp-play-me pull-right m-t-sm m-l text-md">
+                                                                                                                                        <i class="icon-control-play text"></i>
+                                                                                                                                        <i class="icon-control-pause text-active"></i>
+                                                                                                                                      </a>
+                                  <a class="pull-right m-t-sm m-r-sm m-l-lg">
+                                                                                                                                          <small class="text-muted">68:71</small>
+                                                                                                                                        </a>
+                                  <a class="pull-left m-t-sm m-r-sm">
+                                                                                                                                            <small class="text-muted">04</small>
+                                                                                                                                          </a>
+                                  <a href="#" class="pull-left thumb-sm m-r">
+                                                                                                                                    <img src="images/a1.png" alt="...">
+                                                                                                                                  </a>
+                                  <a class="clear" href="#">
+                                                                                                                                    <span class="block text-ellipsis">2017-09-09 The process of faith</span>
+                                                                                                                                    <small class="text-muted">Rev Helen Oyegoke</small>
+                                                                                                                                  </a>
+                                </li>
+                                <li class="list-group-item clearfix">
+    
+                                  <a href="#" class="pull-right m-t-sm m-l text-md">
+                                                                                                                                                                      <i class="icon-cloud-download"></i>
+                                                                                                                                                                    </a>
+                                  <a href="#" class="jp-play-me pull-right m-t-sm m-l text-md">
+                                                                                                                                                                        <i class="icon-control-play text"></i>
+                                                                                                                                                                        <i class="icon-control-pause text-active"></i>
+                                                                                                                                                                      </a>
+                                  <a class="pull-right m-t-sm m-r-sm m-l-lg">
+                                                                                                                                                                          <small class="text-muted">52:71</small>
+                                                                                                                                                                        </a>
+                                  <a class="pull-left m-t-sm m-r-sm">
+                                                                                                                                                                            <small class="text-muted">05</small>
+                                                                                                                                                                          </a>
+                                  <a href="#" class="pull-left thumb-sm m-r">
+                                                                                                                                                                    <img src="images/a2.png" alt="...">
+                                                                                                                                                                  </a>
+                                  <a class="clear" href="#">
+                                                                                                                                                                    <span class="block text-ellipsis">2017-09-09 Unveiling The Mysteries Of God</span>
+                                                                                                                                                                    <small class="text-muted">Rev Kayode Oyegoke</small>
+                                                                                                                                                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
+                 
                 </section>
                 <footer class="footer bg-dark lter">
                   <div id="jp_container_N">
@@ -782,80 +904,7 @@
                 </footer>
               </section>
             </section>
-            <!-- side content -->
-            <aside class="aside-md bg-black dk" id="sidebar">
-              <section class="vbox animated fadeInRight">
-                <section class="w-f-md scrollable hover">
-                  <h4 class="font-thin m-t text-center">Pricing Plans</h4>
-                  <div class="col-md-12">
-
-                    <div class="row row-sm">
-                      <div class="col-sm-12">
-                        <div class="bg-primary wrapper-md  text-center ">
-                          <a href="#">
-                            <span class="h4 m-b-xs block">Free</span>
-                            <span class="h2  block">₦0</span>
-                            <span class="block m-b-xs">Always</span>    
-                            <div class="text-sm block m-b-xs">•</div>         
-                            <span class="text-muted">Unlimited downloads of only free messages</span>
-                            </a><a href="#" class="btn btn-s-md m-t-sm btn-transparent">Sign Up</a>
-
-                        </div>
-                      </div>
-                      <div class="col-sm-12">
-                        <div class="bg-info dk wrapper-md  text-center">
-                          <a href="#">
-                          <span class="h4 m-b-xs block">Economy</span>
-                          <span class="h2  block">₦500</span>
-                          <span class="block m-b-xs">1 day</span>    
-                          <div class="text-sm block m-b-xs">•</div>                        
-                          <span class="text-muted">Unlimited downloads daily of all messages</span>
-                          </a><a href="#" class="btn btn-s-md m-t-sm btn-transparent">Join</a>
-
-
-                        </div>
-                      </div>
-                      <div class="col-sm-12 ">
-                        <div class="bg-success dk wrapper-md  text-center">
-                          <a href="#">
-                          <span class="h4 m-b-xs block">Super Savers</span>
-                          <span class="h2  block">₦2,000</span>
-                          <span class="block m-b-xs">7 days</span>    
-                          <div class="text-sm block m-b-xs">•</div>     
-                          <span class="text-muted">Unlimited downloads weekly of all messages</span>
-                          </a><a href="#" class="btn btn-s-md m-t-sm btn-transparent">Join</a>
-
-
-                        </div>
-                      </div>
-                      <div class="col-sm-12">
-                        <div class="bg-primary lter wrapper-md  text-center">
-                          <a href="#">
-                            <span class="h4 m-b-xs block">Classic</span>
-                            <span class="h2  block">₦10,000</span>
-                            <span class="block m-b-xs">30 days</span>    
-                            <div class="text-sm block m-b-xs">•</div>    
-                            <span class="text-muted">Unlimited downloads monthly of all messages</span>
-                            </a><a href="#" class="btn btn-s-md m-t-sm btn-transparent">Join</a>
-
-
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </section>
-                <footer class="footer footer-md bg-black lter">
-                  <span class="musicbar bg-success bg-empty inline m-l-sm m-t" style="width:20px;height:20px">
-                        <span class="bar1 a1  lter"></span>
-                  <span class="bar2 a2  lt"></span>
-                  <span class="bar3 a3 bg"></span>
-                  <span class="bar4 a4 dk"></span>
-                  <span class="bar5 a5 dker"></span>
-                  </span>
-                </footer>
-              </section>
-            </aside>
-            <!-- / side content -->
+            
           </section>
           <a href="#" class="hide nav-off-screen-block" data-toggle="class:nav-off-screen,open" data-target="#nav,html"></a>
         </section>
