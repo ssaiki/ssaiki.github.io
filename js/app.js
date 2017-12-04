@@ -73,7 +73,7 @@ Modernizr.addTest('ios7 ipad',function(){return!!navigator.userAgent.match(/iPad
   var Bjax = function (element, options) {    
     this.options   = options
     this.$element  = $( this.options.target || 'html' );
-    this.start()
+    //this.start()
   }
 
   Bjax.DEFAULTS = {
